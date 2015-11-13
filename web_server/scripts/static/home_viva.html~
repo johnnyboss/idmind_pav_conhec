@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<title>VIVA Web Console</title>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+<script src="/static/jquery.js" type="text/javascript"></script>
+<script src="/static/console.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="header">
+  <span class="pagetitle">
+  VIVA Web Console
+  </span>
+</div>
+
+<br/>
+<div>
+      <img src="Logo_IDMIND.png" style="position:fixed; right:0px; bottom:0px; width:161px; height:46; border:5;" />
+</div>
+
+<div><input type="text" id="say_content" size="50"/><button type="button" id="say">Say it!</button></div>
+
+<div>
+  <table>
+    <tr><td align="right">Network:</td><td id="net">&nbsp;</td></tr>
+    <tr><td align="right">Status:</td><td id="status">&nbsp;</td></tr>
+    <tr><td align="right">Battery:</td><td id="battery">&nbsp;</td></tr>
+    <tr><td align="right">Map:</td><td id="map_menu"><span>--- (loading) ---</span></td></tr>
+  </table>
+</div>
+
+<div style="position: relative">
+  <canvas id="map_canvas_bg" style="position: relative; left: 0; top: 0; z-index: 1;"></canvas>
+  <canvas id="map_canvas_fg" style="position: absolute; left: 0; top: 0; z-index: 2;"></canvas>
+  <canvas id="map_canvas_rb" style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas>
+</div>
+
+<br/>
+
+<div class="footer">
+  (C) 2016 IDMind 
+</div>
+
+</body>
+</html>

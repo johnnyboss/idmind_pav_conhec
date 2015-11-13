@@ -1,0 +1,13 @@
+<launch>
+
+  <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter">
+    <rosparam command="load" file="/home/miguel/catkin_ws/src/no_build/launch/filters.yaml" />
+  </node>
+
+<!--  <node pkg="map_laser" type="filter.py" name="map_laser_filter" respawn="true" output="screen"/> -->
+
+  <node pkg="leg_detector" type="leg_detector" name="leg_detector" args="scan:=scan $(find leg_detector)/config/trained_leg_detector.yaml" output="screen" >
+    <param name="fixed_frame" type="string" value="/map" />
+  </node>
+
+</launch>

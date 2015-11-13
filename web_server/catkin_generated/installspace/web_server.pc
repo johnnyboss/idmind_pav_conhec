@@ -1,0 +1,8 @@
+prefix=/home/freire/catkin_ws/install
+
+Name: web_server
+Description: Description of web_server
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/freire/catkin_ws/install/lib 
+Requires: 

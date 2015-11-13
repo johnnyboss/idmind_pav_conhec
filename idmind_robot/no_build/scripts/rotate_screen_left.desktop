@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=rotate_screen_left
+Exec=gnome-terminal -e /home/social_robot/.config/autostart/rotate_screen_left.sh
+X-GNOME-Autostart-enabled=false

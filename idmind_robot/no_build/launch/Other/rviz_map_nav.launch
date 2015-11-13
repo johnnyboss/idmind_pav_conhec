@@ -1,0 +1,14 @@
+<launch>
+
+<node pkg="tf" type="static_transform_publisher" name="odom_to_base_link" args="0 0 0 0 0 0 odom base_link 100" />
+<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="10 10 0 0 0 0 map odom 100" />
+
+<arg name="map_file" default="$(find no_build)/maps/idmind.yaml" />
+<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" output="screen" />
+
+<node pkg="move_base" type="move_base" name="move_base" output="screen" />
+
+<arg name="rviz_config" default="$(find no_build)/config/idmind.rviz" />
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_config)" output="screen" />
+
+</launch>

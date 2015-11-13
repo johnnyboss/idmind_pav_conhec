@@ -1,0 +1,1 @@
+KERNEL=="card0", SUBSYSTEM=="drm", ACTION=="change", RUN+="/home/viva/catkin_ws/src/idmind_robot/no_build/scripts/projector.sh"

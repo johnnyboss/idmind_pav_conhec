@@ -1,0 +1,9 @@
+SUBSYSTEMS=="usb",ATTRS{idProduct}=="6001",ATTRS{idVendor}=="0403",ATTRS{serial}=="board1",SYMLINK+="idmind-sensorsboard",GROUP="dialout"
+SUBSYSTEMS=="usb",ATTRS{idProduct}=="6001",ATTRS{idVendor}=="0403",ATTRS{serial}=="board2",SYMLINK+="idmind-motorsboard",GROUP="dialout"
+SUBSYSTEMS=="usb",ATTRS{idProduct}=="6001",ATTRS{idVendor}=="0403",ATTRS{serial}=="board3",SYMLINK+="idmind-interactionboard",GROUP="dialout"
+SUBSYSTEMS=="usb",ATTRS{idProduct}=="6001",ATTRS{idVendor}=="0403",ATTRS{serial}=="board4",SYMLINK+="idmind-armsboard",GROUP="dialout"
+
+SUBSYSTEMS=="usb",KERNEL=="ttyACM[0-9]*",ATTRS{manufacturer}=="Arduino LLC",SYMLINK+="idmind-imu",GROUP="dialout"
+
+KERNEL=="ttyACM*",SUBSYSTEM=="tty",ATTRS{idVendor}=="15d1",ATTRS{idProduct}=="0000",SYMLINK+="idmind-hokuyo_%k",GROUP="dialout"
+#KERNEL=="ttyACM*",SUBSYSTEM=="tty",ATTRS{idVendor}=="15d1",ATTRS{idProduct}=="0000",PROGRAM="/opt/ros/indigo/lib/hokuyo_node/getID /dev/%k q",SYMLINK+="idmind-hokuyo_%c",GROUP="dialout"

@@ -1,0 +1,6 @@
+uint8 activate
+uint8 hardstop_time
+uint8 back_up
+uint8 stay_blocked
+---
+bool success

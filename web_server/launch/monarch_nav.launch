@@ -1,0 +1,13 @@
+<!-- 
+
+This lauch file runs every node needed for the navigation stack
+
+-->
+
+<launch>
+<arg name="map" default="$(find no_build)/maps/idmind.yaml"/>
+
+<param name="map" type="string" value="$(arg map)" />
+<node name="server" pkg="web_server" type="server" /> 
+
+</launch>

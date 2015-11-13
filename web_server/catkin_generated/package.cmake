@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "web_server")
+set(web_server_MAINTAINER "freire <freire@todo.todo>")
+set(web_server_DEPRECATED "")
+set(web_server_VERSION "0.0.0")
+set(web_server_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "cereal_port" "geometry_msgs" "nav_msgs" "tf" "actionlib" "actionlib_msgs")
+set(web_server_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "actionlib" "actionlib_msgs" "cereal_port" "geometry_msgs" "nav_msgs" "tf")
+set(web_server_BUILDTOOL_DEPENDS "catkin")
