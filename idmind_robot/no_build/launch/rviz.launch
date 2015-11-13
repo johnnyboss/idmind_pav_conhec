@@ -1,6 +1,0 @@
-<launch>
-
-<arg name="rviz_config" value="$(find no_build)/config/idmind.rviz" />
-<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_config)" output="screen" />
-
-</launch>

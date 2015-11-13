@@ -1,9 +1,0 @@
----
-float64 motors_voltage
-float64 drivers_voltage
-float64 electronics_voltage
-uint8 motor_drivers
-uint8 motors_power
-uint8 drivers_power
-uint8 electronics_power
-bool success

@@ -1,4 +1,0 @@
-uint8 mode_left
-uint8 mode_right
----
-bool success

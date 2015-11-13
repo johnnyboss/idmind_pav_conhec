@@ -1,5 +1,0 @@
----
-float64 motors_battery
-float64 electronics_battery
-float64 charger_voltage
-bool success
